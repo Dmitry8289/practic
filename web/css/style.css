@@ -1,0 +1,336 @@
+@font-face {
+	font-family: "Nunito Sans";
+	src: url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700;900&family=Open+Sans:wght@500;700;800&display=swap");
+	font-weight: auto;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Nunito Sans", sans-serif!important;
+	box-sizing: border-box;
+}
+
+:root {
+	--brand-color: #ff0000;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.header {
+	position: relative;
+	width: auto;
+	height: 50vh;
+	background-size: cover;
+	background-position: center;
+	z-index: 1;
+}
+
+.header-bg {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.438);
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.479);
+	height: 90px;
+}
+
+.logo {
+	display: flex;
+	color: white;
+	align-items: center;
+	margin-left: 40px;
+}
+
+.logo img {
+	height: 30px;
+	margin: 0 10px;
+}
+
+.logo p {
+	font-size: 22px;
+	text-transform: uppercase;
+	color: var(--brand-color);
+	letter-spacing: 2px;
+}
+
+.logo span {
+	color: white;
+}
+
+.navbar-menu {
+	background-color: rgba(0, 0, 0, 0.479);
+}
+.navbar-menu a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: white;
+	font-size: 15px;
+	padding: 35px 10px;
+	transition: background-color 0.5s;
+}
+
+.havbar-menu a:hover {
+	background-color: rgba(255, 255, 255, 0.116);
+}
+
+.header-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.header-title h1 {
+	text-transform: uppercase;
+	font-size: 70px;
+	margin: 10px;
+}
+
+.header-title p {
+	padding: 5px;
+	margin: 10px 40px;
+}
+
+.btn {
+	border-radius: 30px;
+	border: 0;
+	margin: 10px;
+	text-transform: uppercase;
+	color: white;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+	--bs-btn-padding-x: 0px!important;
+}
+
+.btn:hover {
+	background-color: black;
+	color: white;
+}
+
+.btn2 {
+	color: var(--brand-color);
+}
+
+.header-arrow {
+	position: absolute;
+	top: 440px;
+	background-color: var(--brand-color);
+	border: 5px solid var(--brand-color);
+	border-radius: 50%;
+}
+
+.blog {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+}
+
+.blog-title {
+	text-align: center;
+	margin: 50px;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+
+.blog-title h2 {
+	position: relative;
+}
+
+.box img {
+	width: 300px;
+}
+
+.box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	margin: 5px;
+	width: 300px;
+}
+
+.box h3 {
+	text-transform: uppercase;
+	margin: 10px 0;
+	font-size: 16px;
+}
+
+.box p {
+	font-size: 14px;
+}
+.btn-box {
+	background-color: var(--brand-color);
+	border: 1 px solid var(--brand-color);
+	border-radius: 30px;
+	padding: 5px 15px;
+	color: white;
+	margin: 10px 0;
+	font-size: 15px;
+	cursor: pointer;
+	transition: background-color 0.5s;
+}
+.btn-box p {
+	text-transform: uppercase;
+}
+
+.btn-box:hover {
+	background-color: black;
+}
+
+.service {
+	background-color: #28272c;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.service-title {
+	color: white;
+}
+
+.service-box {
+	color: white;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.service-box img {
+	width: 170px;
+}
+
+.contact {
+	width: 100%;
+}
+
+.contact-box {
+	display: flex;
+	margin-left: 200px;
+	justify-content: center;
+}
+
+.contact-box img {
+	width: 400px;
+	margin: 0 20px;
+}
+
+.input-style input {
+	margin: 10px 0px;
+	border: 1px solid gray;
+	border-radius: 8px;
+	width: 400px;
+	padding: 10px;
+}
+
+input:focus {
+	outline: none;
+	box-shadow: 1px 1px 15px #ff00004d;
+	border: 2px solid var(--brand-color);
+}
+
+textarea:focus {
+	outline: none;
+	box-shadow: 1px 1px 15px #ff00004d;
+	border: 2px solid var(--brand-color);
+}
+
+.form-text {
+	margin: 10px 0px;
+	border: 1px solid gray;
+	border-radius: 8px;
+	width: 400px;
+	padding: 10px;
+}
+
+.checkbox-style {
+	width: 400px;
+}
+
+.checkbox-style p {
+	padding: 0 5px;
+	font-size: 10px;
+	color: rgb(199, 191, 191);
+}
+
+.checkbox-style {
+	display: flex;
+	padding: 0 5px;
+}
+
+.btn-send {
+	margin: 10px 300px;
+	box-shadow: 0px 3px 6px #ff00004d;
+	border: 1px solid var(--brand-color);
+	border-radius: 40px;
+	padding: 5px 20px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-send:hover {
+	background-color: black;
+	color: white;
+}
+
+#checkbox:checked {
+	border: 10px solid black;
+	accent-color: var(--brand-color);
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	background-color: #28272c;
+	height: 300px;
+}
+
+.footer-links {
+	margin: 20px;
+	display: flex;
+	flex-direction: row;
+}
+
+.column1 {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer-links a {
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	transition: color 0.3s;
+	margin-left: 50px
+}
+
+.footer-links a:hover {
+	color: var(--brand-color);
+}
+
+.logo-footer {
+	margin-top: 20px;
+}
+
+.footer-text {
+	align-self: flex-end;
+	color: grey;
+	margin-right: 50px;
+}
